@@ -1,0 +1,49 @@
+.header-top {
+    background-color: $bg-main;
+    border-bottom: 1px solid $secondary-color;
+
+    &-text {
+        font-size: 16px;
+    }
+}
+
+.header-bottom {
+    background-color: $bg-main;
+
+    .btn-search {
+        background-color: $primary-button;
+        padding: 8px 16px;
+    }
+
+    .compare-product svg,
+    .favorite-whislist svg,
+    .login svg,
+    .cart svg {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+}
+
+.menu-nav {
+    background-color: $bg-secondary;
+
+    .menu-items .dropdown {
+        gap: 50px;
+
+        .dropdown-menu {
+            display: none
+        }
+
+        .dropdown-menu.active {
+            display: block;
+        }
+    }
+   
+    .menu-links .menu-item {
+        text-transform: uppercase;
+    }
+
+    .gap-50 {
+        gap: 50px;
+    }
+}

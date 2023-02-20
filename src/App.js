@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout';
 import { Home, About, Contact } from './pages/index'
+import './scss/index.scss'
+
 
 function App() {
   return (
