@@ -29,9 +29,17 @@
 
     .menu-items .dropdown {
         gap: 50px;
+        cursor: pointer;
 
         .dropdown-menu {
-            display: none
+            display: none;
+            top: 40px;
+            box-shadow: 2px 4px 7px #ebebeb;
+            border: none;
+        }
+
+        .dropdown-menu span {
+            display: inline-block;
         }
 
         .dropdown-menu.active {
@@ -45,5 +53,13 @@
 
     .gap-50 {
         gap: 50px;
+    }
+
+    .mr-50 {
+        margin-right: 50px;
+    }
+
+    .mr-10 {
+        margin-right: 10px;
     }
 }

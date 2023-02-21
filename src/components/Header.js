@@ -6,10 +6,10 @@ import { FiUser } from 'react-icons/fi'
 import { HiSwitchHorizontal } from 'react-icons/hi'
 import { BsHeart } from 'react-icons/bs'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
+import { BiCategoryAlt } from 'react-icons/bi'
 
 const Header = () => {
     const [dropdown, setDropDown] = useState(false)
-    console.log(dropdown)
 
     let handleDropDown = () => {
         setDropDown(!dropdown)
@@ -54,17 +54,17 @@ const Header = () => {
                             <div className='d-flex align-items-center justify-content-between'>
                                 <div className='compare-product d-flex align-items-center'>
                                     <div><HiSwitchHorizontal className='text-white' /></div>
-                                    <Link><span className='text-white'>Compare <br /> <small>Product</small></span></Link>
+                                    <Link><span className='text-white'>So sánh <br /> <small>sản phẩm</small></span></Link>
                                 </div>
 
                                 <div className='favorite-whislist d-flex align-items-center'>
                                     <div><BsHeart className='text-white' /></div>
-                                    <Link><span className='text-white'>Favourite <br /> <small>Whislist</small></span></Link>
+                                    <Link><span className='text-white'>Danh sách <br /> <small>yêu thích</small></span></Link>
                                 </div>
 
                                 <div className='login d-flex align-items-center'>
                                     <div className='ml-1'><FiUser className='text-white' /></div>
-                                    <Link><span className='text-white'>Login <br /> <small>My account</small></span></Link>
+                                    <Link><span className='text-white'>Đăng nhập <br /> <small>Tài khoản của tôi</small></span></Link>
                                 </div>
 
                                 <div className='cart d-flex align-items-center'>
@@ -84,26 +84,31 @@ const Header = () => {
                     <div className='row'>
                         <div className='col-12'>
                             <div className='menu-items d-flex align-items-center'>
-                                <div>
-                                    <div className="dropdown gap-50">
-                                        <span className='text-white text-uppercase'
+                                <div className='mr-50'>
+                                    <div className="dropdown">
+                                        <span className='text-white text-uppercase d-flex align-items-center'
                                             onClick={() => handleDropDown()}
                                         >
-                                            Shop Category
+                                            <BiCategoryAlt className='mr-10' />
+                                            Danh mục khác
                                         </span>
-                                        <ul className={`dropdown-menu ${dropdown ? 'active' : ''}`} aria-labelledby="dropdownMenuButton1">
-                                            <li><a className="dropdown-item" href="/">Action</a></li>
-                                            <li><a className="dropdown-item" href="/">Another action</a></li>
-                                            <li><a className="dropdown-item" href="/">Something else here</a></li>
+                                        <ul className={`dropdown-menu ${dropdown ? 'active' : ''}`}>
+                                            <li>
+                                                <Link className="dropdown-item" to="">Quần áo</Link>
+                                            </li>
+                                            <li>
+                                                <Link className="dropdown-item" to="">Nước hoa</Link>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className='menu-links'>
                                     <div className='d-flex align-items-center gap-50'>
-                                        <NavLink className="text-white menu-item" to='/home'>Home</NavLink>
-                                        <NavLink className="text-white menu-item" to='/store'>Store</NavLink>
-                                        <NavLink className="text-white menu-item" to='/blogs' >Blogs</NavLink>
-                                        <NavLink className="text-white menu-item" to='/contact'>Contact</NavLink>
+                                        <NavLink className="text-white menu-item" to='/'>Trang chủ</NavLink>
+                                        <NavLink className="text-white menu-item" to='/about'>Giới thiệu</NavLink>
+                                        <NavLink className="text-white menu-item" to='/store'>Cửa hàng</NavLink>
+                                        <NavLink className="text-white menu-item" to='/blogs' >Tin tức</NavLink>
+                                        <NavLink className="text-white menu-item" to='/contact'>Liên hệ</NavLink>
                                     </div>
                                 </div>
                             </div>

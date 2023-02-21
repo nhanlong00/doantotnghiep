@@ -1,0 +1,57 @@
+footer {
+    background-color: $bg-secondary;
+
+    .footer-top-data {
+        .icon-send {
+            font-size: 24px;
+            margin-right: 15px;
+        }
+
+        .text-newsletter {
+            font-size: 24px;
+        }
+    }
+
+    .footer-copyright {
+        border-top: 1px solid $secondary-color;
+    }
+
+    .footer-center {
+        .title {
+            font-size: 22px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .intro-list__items {
+            > li {
+                padding: 8px 0;
+            }
+    
+            .list-item {
+                text-transform: uppercase;
+                color: #fff;
+                line-height: 16px;
+                display: inline-block;
+            }
+        }
+    }
+
+    .footer-right {
+        .payment-method,
+        .contact-social .contact-us-social  {
+            font-size: 22px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .social-items .social-item {
+            padding: 8px 0;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.mtb-10 {
+  margin: 10px 0;  
+}
